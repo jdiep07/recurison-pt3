@@ -16,9 +16,27 @@ factorial(3); // 6
 factorial(5); // 120
 ***********************************************************************/
 
-function factorial(num) {
-  // Your code here
-}
+// const factorial = (num) => {
+//   //base case:
+//   if(num === 1) return num;
+//   // recursive step
+//   return num * factorial(num -1);
+// }
+
+// const factorial = (num) => {
+//   let res = 1;
+
+//   for (let i = num; i >= 1; i--){
+//     res *= i;
+//   }
+//   return res;
+// }
+
+// const factorial = (num, res = 1) => {
+//   if (num === 1) return res * num;
+//   res *= num;
+//   return factorial(num - 1, res)
+// }
   
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = factorial;
