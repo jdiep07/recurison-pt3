@@ -27,21 +27,21 @@ if the arr comes in empty, jsut return an empty arr;
 
 ***********************************************************************/
 
-// const flatten = (arr) => {
-//   let res = [];
+const flatten = (arr) => {
+  let res = [];
 
-//   for(let i = 0; i < arr.length; i++){
-//     let el = arr[i];
+  for(let i = 0; i < arr.length; i++){
+    let el = arr[i];
     
-//     if( el instanceof Array){
-//       res.push(...flatten(el)) //recurision 
-//     } else {
-//       res.push(el);
-//     }
-//   }
+    if( el instanceof Array){
+      res.push(...flatten(el)) //recurision 
+    } else {
+      res.push(el);
+    }
+  }
 
-//   return res;
-// }
+  return res;
+}
   
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = flatten;
