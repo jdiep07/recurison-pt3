@@ -16,12 +16,12 @@ factorial(3); // 6
 factorial(5); // 120
 ***********************************************************************/
 
-// const factorial = (num) => {
-//   //base case:
-//   if(num === 1) return num;
-//   // recursive step
-//   return num * factorial(num -1);
-// }
+const factorial = (num) => {
+  //base case:
+  if(num === 1) return num;
+  // recursive step
+  return num * factorial(num -1);
+}
 
 // const factorial = (num) => {
 //   let res = 1;
