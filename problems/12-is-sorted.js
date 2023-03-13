@@ -14,9 +14,10 @@ isSorted([5, 4, 3, 2, 1]); // false
 const isSorted = (arr) => {
   // base case
   if(arr.length === 1) return true;
-  // recursive step:
+  // 2nd base case if false
   if(arr[0] > arr[1]) return false
-    
+  
+  // recursive step: continues arr test if (arr[0] < arr[1])
   return isSorted(arr.slice(1));
   
 }
