@@ -24,9 +24,9 @@ const fibonacci = (num) => {
   if( num === 1 || num === 2) return 1;
 
   // recursive step: 
-  return fibonacci(num -1) + fibonacci(num -2);
+  return fibonacci(num - 1) + fibonacci(num - 2);
 }
-  
+
 //const fibonacci = n => n <= 2 ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = fibonacci;
