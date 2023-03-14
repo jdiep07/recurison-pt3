@@ -24,25 +24,50 @@ if the arr comes in empty, jsut return an empty arr;
  
  2. return our function with the inner arrays.
 
-
 ***********************************************************************/
 
 const flatten = (arr) => {
-  let res = []; // empty results
+  let res = [];
 
-  for(let i = 0; i < arr.length; i++){ // for loop to iterate through arr
+  for (let i = 0; i < arr.length; i++) {
     let el = arr[i];
-    
-    if( el instanceof Array){ // checks if el is an array or not
-      res.push(...flatten(el)) //recurision [ the ...flatten-- pulls the nested-array element to be push.
+    if(el instanceof Array) {
+      res.push(...flatten(el));
     } else {
-      res.push(el); // if it is just element not nested, continue to push into res.
+      res.push(el);
     }
   }
-
-  return res;   // returns the results of res
+  return res;
 }
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const flatten = (arr) => {
+//   let res = []; // empty results
+
+//   for(let i = 0; i < arr.length; i++){ // for loop to iterate through arr
+//     let el = arr[i];
+
+//     if( el instanceof Array){ // checks if el is an array or not
+//       res.push(...flatten(el)) //recurision [ the ...flatten-- pulls the nested-array element to be push.
+//     } else {
+//       res.push(el); // if it is just element not nested, continue to push into res.
+//     }
+//   }
+
+//   return res;   // returns the results of res
+// }
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = flatten;
-  

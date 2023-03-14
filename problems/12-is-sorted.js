@@ -9,18 +9,35 @@ isSorted([1, 2, 4, 3, 5]); // false
 isSorted([2, 4, 6, 7, 8]); // true
 isSorted([5, 4, 3, 2, 1]); // false
 ***********************************************************************/
-
-
 const isSorted = (arr) => {
-  // base case
   if(arr.length === 1) return true;
-  // 2nd base case if false
-  if(arr[0] > arr[1]) return false
-  
-  // recursive step: continues arr test if (arr[0] < arr[1])
+  if(arr[0] > arr[1]) return false;
   return isSorted(arr.slice(1));
-  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const isSorted = (arr) => {
+//   // base case
+//   if(arr.length === 1) return true;
+//   // 2nd base case if false
+//   if(arr[0] > arr[1]) return false
+  
+//   // recursive step: continues arr test if (arr[0] < arr[1])
+//   return isSorted(arr.slice(1));
+  
+// }
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
